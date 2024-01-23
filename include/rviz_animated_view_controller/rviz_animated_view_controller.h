@@ -359,7 +359,7 @@ protected:    //members
   Ogre::SceneNode* attached_scene_node_;
 
   Ogre::Quaternion reference_orientation_;    ///< Used to store the orientation of the attached frame relative to <Fixed Frame>
-  Ogre::Vector3 reference_position_;          ///< Used to store the position of the attached frame relative to <Fixed Frame>
+  Ogre::Vector3 reference_position_ = Ogre::Vector3(0,0,0);          ///< Used to store the position of the attached frame relative to <Fixed Frame>
 
   // Variables used during animation
   bool animate_;
